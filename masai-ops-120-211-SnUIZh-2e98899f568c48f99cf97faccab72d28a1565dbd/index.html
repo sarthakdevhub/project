@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Index page</title>
+  </head>
+
+  <body>
+    <div id="container">
+    <div style="margin: auto;">
+      <button id="show_products" onclick="redirectToInventoryPage()">Show products</button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <form id="product_form">
+        <input type="text" placeholder="Name" id="product_name">
+        <input type="text" placeholder="Brand" id="product_brand">
+        <input type="number" placeholder="Price" id="product_price">
+        <input type="text" placeholder="Image" id="product_image">
+        <input type="submit" value="Add Products" id="sub-btn">
+      </form>
+    </div>
+    </div>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+  </html>
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchMovies</title>
+</head>
+<style>
+    body{
+            background-color: rgb(12,16,26);
+        }
+        #carousel>img{
+            width: 100%;
+            height: 600px;
+        }
+        #navbar{
+            border: 0px solid red;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        #navbar>div{
+            display: flex;
+            border: 0px solid black;
+            justify-content: space-evenly;
+        }
+        #nav-left{
+            width: 35%;
+            display: flex;
+            align-items: center;
+        }
+        #nav-left>*{
+            color: rgb(215, 215, 215);
+        }
+        #nav-right{
+            width: 20%;
+            display: flex;
+            align-items: center;
+        }
+        #nav-right>h3{
+            color:  rgb(215, 215, 215);
+        }
+        #nav-right>button{
+            background-color: rgb(31,128,224);
+            color: white;
+            border: 0px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+       
+        #kid{
+            color: rgb(254,171,5);
+        }
+        #search-box{
+            margin-top: 30px;
+        }
+        #movies{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 80%;
+            gap: 20px;
+            
+            margin: auto;
+            margin-top: 40px;
+        }
+        #movies>div{
+            color: white;
+            text-align: center;
+        }
+        #movies>div>img{
+            height: 400px;
+        }
+        #loader{
+            display: none;
+        }
+        #movies>*{
+            color: white;
+        }
+        #search-box{
+            color: white;
+        }
+        #heah{
+            text-decoration: none;
+        }
+</style>
+<body>
+    <div id="navbar">
+        <div id="nav-left">
+           
+           <a href="index.html" id="heah"><h1>Hotstar</h1></a>
+            <h3>TV</h3>
+            <h3>Movies</h3>
+            <h3>Sports</h3>
+            <h3>Disney+</h3>
+            <h3 id="kid">KiDS</h3>
+        </div>
+        <div id="nav-right">
+          <button>SUBSCRIBE</button>
+          <h3 onclick="login()" id="log">LOGIN</h3>
+        </div>
+    </div>
+
+   
+    <div id='carousel'>
+    </div>
+
+    <div id="search-box">Search Movies: 
+        <input oninput="deattach(searchMovies,1000)" type="text" name="" id="movie_name">
+    </div>
+    <div id="loader">
+        <img id="loader-gif" src="https://i.gifer.com/VAyR.gif" alt="">
+      </div>
+    <div id="movies"></div>
+</body>
+</html>
+<script src="search.js"></script>

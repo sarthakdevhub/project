@@ -1,0 +1,31 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#searchbar{
+   border: 0px solid red;
+   width: 40%;
+   margin: auto;
+   margin-top: 50px;
+}
+#search{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#movies{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border: 0px solid rebeccapurple;
+    justify-items: center;
+    gap: 20px;
+}
+#movies>div>img{
+    height: 500px;
+}

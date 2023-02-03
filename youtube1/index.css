@@ -1,0 +1,47 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+
+#container>div>img{
+width: 100%;
+height: 250px;
+}
+
+#navbar{
+    display: flex;
+    border: 0px solid rebeccapurple;
+    height: 70px;
+    justify-content: space-around;
+}
+#navbar>*{
+    border: 0px solid red;
+}
+#left{
+    border: 0px solid rebeccapurple;
+    display: flex;
+    width: 30%;
+    padding-top: 20px;
+    height: 30px;
+}
+
+#left>input{
+    width: 100%;
+    font-size: 20px;
+}
+#left>button{
+    width: 20%;
+}
+#line{
+    margin: auto;
+    text-align: center;
+    color: rgb(197, 197, 197);
+}
+#sortin{
+    display: none;
+}

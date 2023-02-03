@@ -1,0 +1,30 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0px 30px;
+}
+#navbar>div{
+    display: flex;
+    justify-content:space-around ;
+    border: 0px solid red;
+    width: 20%;
+}
+#input_data{
+    text-align: center;
+}
+#input_data>form{
+    display: grid;
+    width: 20%;
+    padding: 20px;
+    margin: auto;
+    gap: 20px;
+}
+#input_data>form>input{
+    padding: 10px;
+}
+#product_submit{
+    width: 40%;
+    margin: auto;
+}

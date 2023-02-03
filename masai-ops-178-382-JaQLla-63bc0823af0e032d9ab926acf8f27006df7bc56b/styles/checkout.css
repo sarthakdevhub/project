@@ -1,0 +1,32 @@
+#movie{
+    border: 0px solid rebeccapurple;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+#movie>div>img{
+    border: 0px solid black;
+    width: 60%;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#info{
+  display: flex;
+  border: 0px solid red;
+  width: 50%;
+  justify-content: center;
+  margin: auto  ;
+}
+#info>*{
+    padding: 10px 30px;
+}
+
+#booking_status{
+    text-align: center;
+}

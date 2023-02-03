@@ -1,0 +1,50 @@
+
+body{
+  background-color: rgb(0,94,97);
+  color: rgb(252,88,1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#show_products{
+  border: 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(0,94,97);
+  color: rgb(252,88,1);
+  font-size: 20px;
+}
+
+#show_products:hover{
+  background-color: rgb(252,88,1);
+  color:rgb(0,94,97) ;
+}
+
+#product_form>input{
+  border: 0px;
+  padding: 7px;
+  border-radius: 10px;
+}
+#product_form>input:nth-child(5){
+  width: 70%;
+  margin: auto;
+  background-color: rgb(0,94,97);
+  color: rgb(252,88,1);
+  font-size: 14px;
+}
+#product_form>input:nth-child(5):hover{
+  
+  background-color: rgb(252,88,1);
+  color:rgb(0,94,97) ;
+}
+form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  width: 400px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #container{
+        display: flex;
+        height: 600px;
+        gap: 20px;
+      }
+      #video_detail{
+        flex: 7;
+      }
+      #reco{
+        flex: 3;
+      }
+      #navbar{
+       display: flex;
+       border: 0px solid rebeccapurple;
+       height: 70px;
+       justify-content: space-around;
+      }
+      #navbar>*{
+       border: 0px solid red;
+      }
+     #left{
+      border: 0px solid rebeccapurple;
+      display: flex;
+      width: 30%;
+      padding-top: 20px;
+      height: 30px;
+     }
+
+     #left>input{
+      width: 100%;
+     font-size: 20px;
+    }
+    #left>button{
+     width: 20%;
+    }  
+    #reco{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+    }
+    #reco>div{
+      border: 0px solid red;
+      height: 120px;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+    }
+    #reco>div>img{
+      width: 45%;
+      height: 100%;
+    }
+    </style>
+</head>
+<body onload="showclickedvideo()">
+    
+    <div id="navbar">
+        <img src="https://assets.turbologo.com/blog/en/2019/10/19084944/youtube-logo-illustration.jpg" alt="">
+        <div id="left">
+            <input type="text" placeholder="Search" id="search">
+            <button onclick="searchVideo()">Search</button>
+        </div>
+    </div>
+    <div id="container">
+        <div id="video_detail">
+        <!-- <iframe width="1031" height="580" src="https://www.youtube.com/embed/sEZJONtOnLU" title="Small Tent Car Camping w/ pizza from scratch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div id="reco">
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          <div>
+            <img src="https://i.ytimg.com/vi/504IurO7F94/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYZTZnJksgRO6UFMk2HArlXxaswA" alt="">
+            <div>
+              <h3>Chehre | MC SQUARE | Hustle 2.0</h3>
+              <p>KaanPhod Music </p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="video.js"></script>
